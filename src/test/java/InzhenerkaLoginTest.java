@@ -1,10 +1,10 @@
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class InzhenerkaLoginTest {
+class InzhenerkaLoginTest extends BaseTest {
     @Test
     @DisplayName("Проверка логина")
-    public void runLoginTest() {
+    void runLoginTest() {
         LoginPage loginPage = new LoginPage();
         loginPage.openPage();
         loginPage.setUsername("admin");
